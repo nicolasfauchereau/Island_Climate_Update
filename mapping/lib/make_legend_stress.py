@@ -7,8 +7,6 @@ def make_legend_stress(ax, facecolors=None, title = 'Potential water stress', su
     ax.text(xt, 0.95, title, fontsize=13, transform=ax.transAxes)
     ax.text(xt, 0.915, subtitle, fontsize=11, transform=ax.transAxes)
 
-
-
     ax.add_patch(Rectangle([xt, 0.85], 0.04, 0.04, facecolor=facecolors[-3], edgecolor='0.8', transform=ax.transAxes))
     ax.add_patch(Rectangle([xt, 0.8], 0.04, 0.04, facecolor=facecolors[-2], edgecolor='0.8', transform=ax.transAxes))
     ax.add_patch(Rectangle([xt, 0.75], 0.04, 0.04, facecolor=facecolors[-1], edgecolor='0.8', transform=ax.transAxes))
