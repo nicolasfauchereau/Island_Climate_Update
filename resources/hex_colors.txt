@@ -1,0 +1,6 @@
+above = 131, 180, 215 = 83B4D7
+avg - above = 216, 241, 255 = D8F1FF
+clim = gray 37.5% 
+normal = 237, 237, 237 = EDEDED
+avg - below = 255, 236, 228 = FFECE4
+below = 235, 129, 125 = EB817D
