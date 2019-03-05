@@ -2,9 +2,7 @@ def make_legend_outlook(ax, facecolors=None, title = 'ICU Rainfall forecast', su
 
     from matplotlib.patches import Rectangle
 
-    #     xt = 0.75
-    xt = 0.74
-
+    xt = 0.75
 
     ax.text(xt, 0.95, title, fontsize=13, transform=ax.transAxes)
     ax.text(xt, 0.915, subtitle, fontsize=11, transform=ax.transAxes)
@@ -14,7 +12,7 @@ def make_legend_outlook(ax, facecolors=None, title = 'ICU Rainfall forecast', su
     ax.add_patch(Rectangle([xt, 0.75], 0.04, 0.04, facecolor=facecolors[0], edgecolor='0.8', transform=ax.transAxes))
     ax.add_patch(Rectangle([xt, 0.7], 0.04, 0.04, facecolor=facecolors[2], edgecolor='0.8', transform=ax.transAxes))
     ax.add_patch(Rectangle([xt, 0.65], 0.04, 0.04, facecolor=facecolors[4], edgecolor='0.8', transform=ax.transAxes))
-    ax.add_patch(Rectangle([xt, 0.58], 0.04, 0.04, facecolor=facecolors[-666], edgecolor='0.8', transform=ax.transAxes))
+    ax.add_patch(Rectangle([xt, 0.60], 0.04, 0.04, facecolor=facecolors[-666], edgecolor='0.8', transform=ax.transAxes))
 
     toffset_x = 0.05
     toffset_y = 0.015
@@ -24,5 +22,4 @@ def make_legend_outlook(ax, facecolors=None, title = 'ICU Rainfall forecast', su
     ax.text(xt + toffset_x, 0.75 + toffset_y, 'Near normal', transform=ax.transAxes, fontsize=9)
     ax.text(xt + toffset_x, 0.7 + toffset_y, 'Normal or above', transform=ax.transAxes, fontsize=9)
     ax.text(xt + toffset_x, 0.65 + toffset_y, 'Above', transform=ax.transAxes, fontsize=9)
-
-    ax.text(xt + toffset_x, 0.58 + toffset_y, 'No clear guidance', transform=ax.transAxes, fontsize=9)
+    ax.text(xt + toffset_x, 0.60 + toffset_y, 'No clear guidance', transform=ax.transAxes, fontsize=9)
