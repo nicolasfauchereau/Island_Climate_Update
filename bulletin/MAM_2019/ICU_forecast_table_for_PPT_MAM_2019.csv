@@ -1,0 +1,30 @@
+country_name,T1,T2,T3,CATEGORY,CONFIDENCE
+Kiribati: Line Islands,3,8,89,ABOVE,High
+Nauru,7,8,85,ABOVE,
+Kiribati: Gilbert Islands,8,8,84,ABOVE,
+Kiribati: Phoenix Islands,14,16,70,ABOVE,Moderate
+Tuvalu,20,20,60,ABOVE,Moderate-High
+Solomon Islands,25,25,50,ABOVE,Moderate-High
+Wallis & Futuna,25,25,50,ABOVE,Moderate
+Pitcairn Islands,26,27,47,ABOVE,Moderate-High
+FSM,25,29,46,ABOVE,High
+American Samoa,27,32,41,AVG - ABOVE,Moderate
+Papua New Guinea,29,30,41,ABOVE,High
+Samoa,28,33,39,AVG - ABOVE,Moderate
+Fiji,30,31,39,AVG - ABOVE,Moderate-High
+Marshall Islands,30,33,37,CLIMATOLOGY,Moderate-High
+Austral Islands,31,34,35,CLIMATOLOGY,High
+Tokelau,37,32,31,CLIMATOLOGY,Moderate-High
+Society Islands,39,31,30,AVG - BELOW,Moderate-High
+Southern Cook Islands,38,33,29,CLIMATOLOGY,Moderate-High
+Vanuatu North,43,31,26,BELOW,Moderate
+Tonga,48,26,26,BELOW,High
+Tuamotu Islands,48,27,25,BELOW,High
+Niue,51,25,24,BELOW,Moderate-High
+Northern Cook Islands,54,24,22,BELOW,Moderate-High
+Palau,56,23,21,BELOW,Moderate-High
+Vanuatu South,61,21,18,BELOW,Moderate-High
+New Caledonia,67,18,15,BELOW,High
+Guam,74,16,10,BELOW,High
+Northern Marianas,73,19,8,BELOW,High
+Marquesas,95,3,2,BELOW,High

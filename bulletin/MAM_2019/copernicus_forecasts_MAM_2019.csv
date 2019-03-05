@@ -1,0 +1,30 @@
+country_name,T1,T2,T3,country_fname,std,CONFIDENCE
+New Caledonia,67,18,15,New_Caledonia,13.90280135501715,High
+Pitcairn Islands,26,27,47,Pitcairn_Islands,16.699047255317645,Moderate-High
+Papua New Guinea,29,30,41,Papua_New_Guinea,13.702687658221363,High
+Solomon Islands,25,25,50,Solomon_Islands,17.650556235877044,Moderate-High
+Kiribati: Phoenix Islands,14,16,70,Kiribati:_Phoenix_Islands,21.366680715493136,Moderate
+Fiji,30,31,39,Fiji,17.617841384785823,Moderate-High
+Tuvalu,20,20,60,Tuvalu,15.593552184159213,Moderate-High
+Northern Cook Islands,54,24,22,Northern_Cook_Islands,16.716067724000762,Moderate-High
+Kiribati: Line Islands,3,8,89,Kiribati:_Line_Islands,13.426083738398537,High
+Federated States of Micronesia,25,29,46,Federated_States_of_Micronesia,14.23314229179202,High
+Samoa,28,33,39,Samoa,21.278745774874352,Moderate
+Kiribati: Gilbert Islands,8,8,84,Kiribati:_Gilbert_Islands,28.821408876157037,
+Wallis & Futuna,25,25,50,Wallis___Futuna,20.002992220275537,Moderate
+Tokelau,37,32,31,Tokelau,17.5506300052623,Moderate-High
+Tuamotu / Gambier Islands,48,27,25,Tuamotu__Gambier_Islands,13.533569789108629,High
+Tonga,48,26,26,Tonga,14.790941769420277,High
+Niue,51,25,24,Niue,17.36416234464453,Moderate-High
+Southern Cook Islands,38,33,29,Southern_Cook_Islands,15.66409515167066,Moderate-High
+Austral Islands,31,34,35,Austral_Islands,14.59473118137668,High
+Society Islands,39,31,30,Society_Islands,15.853120201259216,Moderate-High
+Marquesas,95,3,2,Marquesas,12.08029567327441,High
+Vanuatu South,61,21,18,Vanuatu_South,18.319088675981725,Moderate-High
+Vanuatu North,43,31,26,Vanuatu_North,21.475535198454605,Moderate
+Guam,74,16,10,Guam,12.128064142054304,High
+Northern Marianas,73,19,8,Northern_Marianas,9.660715032601363,High
+Marshall Islands,30,33,37,Marshall_Islands,15.365410014498586,Moderate-High
+Nauru,7,8,85,Nauru,31.78908923603847,
+Palau,56,23,21,Palau,19.366761651492713,Moderate-High
+American Samoa,27,32,41,American_Samoa,22.854336848922188,Moderate
