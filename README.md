@@ -23,3 +23,9 @@ where `-s YYYMMDD` indicates the start date (e.g. -s 20190228) and `-e YYYYMMDD`
 + cd into `~/operational/ICU/ops/water_stress/notebooks/`
 + run `prepare_files_for_mapping_and_calculates_stress.ipynb`: do not forget to change the bulletin directory. This notebook reads the copernicus forecasts from the bulletin directory, saves a sanitized version for inclusion in the PPT (e.g. `ICU_forecast_table_for_PPT_AMJ_2019.csv`), reads the last 6 months TRMM anomalies (categories), calculates the Water Stress, and saves both the forecast table for mapping (`ICU_forecast_table_for_mapping.csv`) and the Water Stress for mapping (`ICU_stress_table_for_mapping.csv`).
 + run the notebook `prepare_table_for_Visual_Cortex.ipynb`: do not forget to change the bulletin directory. This notebook reads the copernicus forecasts from the bulletin directory, and saves a file (e.g. `ICU_Rainfall_for_Visual_Cortex_AMJ_2019.csv`) that is used for visualisation using Visual Cortex.
+
+### 4) mapping
+
++ cd into `~/operational/ICU/ops/mapping/notebooks/`
++ run `make_ICU_gis_map_rainfall_forecast.ipynb` for the rainfall forecast map. Again do not forget to change the name of the bulletin directory at the beginning of the notebooks.
++ run `make_ICU_gis_map_water_stress.ipynb` for the Water Stress map. Same thing: set the bulletin directory at the beginning of the notebook.
