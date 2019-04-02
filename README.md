@@ -4,7 +4,7 @@
 ### 1) update the TRMM rainfall daily data:
 
 + cd into `~/operational/ICU/ops/data/TRMM/daily/extended_SP/` and note the date of the last netcdf file
-+ activate the `pangeo` environment and cd into `~/operational/ICU/ops/data/TRMM/daily/scripts/`
++ activate the `pangeo` (need to include xarray, salem and the Python 'geospatial' stack in particular) environment and cd into `~/operational/ICU/ops/data/TRMM/daily/scripts/`
 + run:
 ```
 python get_daily_TRMM_TMPA_netcdf.py -o ../extended_SP -lonW 125 -lonE 240 -latN 25 -latS -50 -s YYYMMDD -e YYYYMMDD
