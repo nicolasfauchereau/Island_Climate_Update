@@ -6,6 +6,8 @@
 Note: you first need to create an EarthData login, and follow the instructions at [https://disc.gsfc.nasa.gov/data-access](https://disc.gsfc.nasa.gov/data-access) to setup 
 your machine to be able to download the TRMM/GPM data from [http://disc2.gesdisc.eosdis.nasa.gov/data/TRMM_RT/TRMM_3B42RT_Daily.7/](http://disc2.gesdisc.eosdis.nasa.gov/data/TRMM_RT/TRMM_3B42RT_Daily.7/).   
 
+For `curl` (or `wget`) you will need to create a `~/.netrc` file, instructions at [https://disc.gsfc.nasa.gov/data-access#mac_linux_wget](https://disc.gsfc.nasa.gov/data-access#mac_linux_wget)
+
 + cd into `~/operational/ICU/ops/data/TRMM/daily/extended_SP/` and note the date of the last netcdf file
 + activate the `pangeo` (need to include xarray, salem and the Python 'geospatial' stack in particular) environment and cd into `~/operational/ICU/ops/data/TRMM/daily/scripts/`
 + run:
