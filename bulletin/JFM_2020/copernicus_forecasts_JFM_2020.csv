@@ -1,0 +1,30 @@
+country_name,T1,T2,T3,country_fname,std,CONFIDENCE
+Marshall Islands,3,17,80,Marshall_Islands,16.2449327253,Moderate-High
+Federated States of Micronesia,20,22,58,Federated_States_of_Micronesia,20.2392177165,Moderate
+Kiribati: Line Islands,21,33,46,Kiribati:_Line_Islands,11.4405094595,High
+Papua New Guinea,25,30,45,Papua_New_Guinea,9.5357944405,High
+Nauru,29,33,38,Nauru,28.1152591588,Moderate
+Vanuatu North,32,34,34,Vanuatu_North,19.5731675595,Moderate-High
+Palau,32,35,33,Palau,30.2414864588,Moderate
+Tonga,32,36,32,Tonga,17.6715472588,Moderate-High
+Niue,34,34,32,Niue,21.0462646594,Moderate
+Fiji,31,38,31,Fiji,17.6896279495,Moderate-High
+Austral Islands,38,32,30,Austral_Islands,14.1585567306,High
+Tuvalu,40,31,29,Tuvalu,25.4904496499,Moderate
+Southern Cook Islands,41,30,29,Southern_Cook_Islands,15.9562801303,Moderate-High
+Pitcairn Islands,43,29,28,Pitcairn_Islands,16.4563606406,Moderate-High
+Vanuatu South,45,28,27,Vanuatu_South,19.0005042067,Moderate-High
+American Samoa,48,26,26,American_Samoa,18.8970564,Moderate-High
+Samoa,49,27,24,Samoa,18.9490234873,Moderate-High
+New Caledonia,51,25,24,New_Caledonia,18.2090662286,Moderate-High
+Wallis & Futuna,52,25,23,Wallis___Futuna,17.5045552469,Moderate-High
+Society Islands,51,27,22,Society_Islands,16.251897713,Moderate-High
+Solomon Islands,52,26,22,Solomon_Islands,14.8046810407,High
+Tuamotu / Gambier Islands,55,23,22,Tuamotu__Gambier_Islands,13.4111224418,High
+Kiribati: Gilbert Islands,55,24,21,Kiribati:_Gilbert_Islands,23.6781800694,Moderate
+Tokelau,60,21,19,Tokelau,21.6679244409,Moderate
+Northern Cook Islands,76,13,11,Northern_Cook_Islands,15.9749016843,Moderate-High
+Guam,66,24,10,Guam,8.4439312853,High
+Kiribati: Phoenix Islands,80,10,10,Kiribati:_Phoenix_Islands,13.8588411935,High
+Northern Marianas,65,28,7,Northern_Marianas,6.1870876424,High
+Marquesas,95,4,1,Marquesas,11.5914306311,High
