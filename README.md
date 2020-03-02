@@ -17,7 +17,7 @@ python get_daily_GPM_IMERG_netcdf.py -o ../extended_SP -lonW 125 -lonE 240 -latN
 
 where `-s YYYMMDD` indicates the start date (e.g. -s 20190228) and `-e YYYYMMDD` the end date for the download
 
-### 2) update the time-series of TRMM anomalies and categories
+### 2) update the time-series of GPM / IMERG anomalies and categories
 
 + cd into `~/operational/ICU/ops/GPM_IMERG/notebooks/`
 + run `5_get_latest_IMERG_TS_monthly_compare_to_climo.ipynb`: This notebook updates the time series of anomalies for each Island Group, which are saved in the folder `GMP_IMERG/outputs/Time_Series/last_6_months`
