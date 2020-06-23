@@ -1,11 +1,12 @@
-#!/Users/nicolasf/anaconda3/envs/IOOS/bin/python
+#!/home/nicolasf/anaconda3/envs/climlab/bin/python
 # -*- coding: utf-8 -*-
 # ==================================================================================
 # code get_daily_GPM_IMERG_netcdf.py
-# Description: download TRMM 3B42 RT netcdf files for the Pacific region
-# TAGS:3B42:wget:datetime
-# created on 2016-07-07
-# updated on 2017-05-23
+# Description: download GPM IMERG version 06 netcdf files for the Pacific region
+# TAGS:IMERG:wget:datetime
+# created on 2016-07-07 (TRMM)
+# updated on 2017-05-23 (TRMM)
+# updated on 2020-01-24 (GPM/IMERG)
 # Nicolas Fauchereau <Nicolas.Fauchereau@gmail.com>
 # ==================================================================================
 
@@ -15,7 +16,6 @@ import numpy as np
 from datetime import datetime
 import pandas as pd
 import xarray as xr
-#from mpl_toolkits.basemap import shiftgrid
 from subprocess import call
 
 
@@ -37,8 +37,8 @@ help='the path where to save the netcdf files, no default')
 parser.add_argument('-p','--proxy', dest='proxy', type=str, default=None, \
 help='the proxy settings (url:port), default is None (no proxy)')
 
-parser.add_argument('-lonW','--lonmin', dest='lonmin', type=float, default=135., \
-help='westernmost longitude for the domain to extract, default is 135.')
+parser.add_argument('-lonW','--lonmin', dest='lonmin', type=float, default=125., \
+help='westernmost longitude for the domain to extract, default is 125.')
 
 parser.add_argument('-lonE','--lonmax', dest='lonmax', type=float, default=240., \
 help='eastermost longitude for the domain to extract, default is 240.')
@@ -46,8 +46,8 @@ help='eastermost longitude for the domain to extract, default is 240.')
 parser.add_argument('-latS','--latmin', dest='latmin', type=float, default=-50., \
 help='southermost latitude for the domain to extract, default is -50.')
 
-parser.add_argument('-latN','--latmax', dest='latmax', type=float, default=10., \
-help='northermost latitude for the domain to extract, default is 10.')
+parser.add_argument('-latN','--latmax', dest='latmax', type=float, default=25., \
+help='northermost latitude for the domain to extract, default is 25.')
 
 vargs = vars(parser.parse_args())
 
@@ -120,9 +120,9 @@ for date in pd.date_range(start = start_date, end = end_date):
 
             dset_in = dset_in[['HQprecipitation','precipitationCal']]
 
-            dset_out = xr.open_dataset('./trmm_grid_description.nc')
+            trmm_grid = xr.open_dataset('./trmm_grid_description.nc')
 
-            dset_in_interp = dset_in.interp_like(dset_out)
+            dset_in_interp = dset_in.interp_like(trmm_grid)
 
             dset_in_interp = dset_in_interp.transpose('time','lat','lon')
 
@@ -130,14 +130,15 @@ for date in pd.date_range(start = start_date, end = end_date):
 
             dset_in_interp = dset_in_interp.assign_coords(lon=(dset_in_interp.lon % 360)).roll(lon=(dset_in_interp.dims['lon'] // 2), roll_coords=True)
 
-            dset_out = dset_out.sel(lon=slice(*lon_bounds),lat=slice(*lat_bounds))
+            dset_in_interp = dset_in_interp.sel(lon=slice(*lon_bounds),lat=slice(*lat_bounds))
 
-            dset_out.to_netcdf(os.path.join(opath, fname_out),  unlimited_dims='time')
+            dset_in_interp.to_netcdf(os.path.join(opath, fname_out),  unlimited_dims='time')
 
             os.remove(os.path.join(opath,fname))
 
             dset_in.close()
-            dset_out.close()
+            dset_in_interp.close()
+            trmm_grid.close()
 
         else:
 
