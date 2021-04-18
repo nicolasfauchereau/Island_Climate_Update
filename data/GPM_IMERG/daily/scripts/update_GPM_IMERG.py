@@ -71,7 +71,7 @@ def get_dates_to_download(dpath='/home/nicolasf/operational/ICU/ops/data/GPM_IME
     
     return dates_to_download
 
-def download_for_dates(dates, opath='/home/nicolasf/operational/ICU/ops/data/GPM_IMERG/daily/extended_SP', proxy=None, lon_min=125., lon_max=240., lat_min=-55., lat_max=25.): 
+def download_for_dates(dates, opath='/home/nicolasf/operational/ICU/ops/data/GPM_IMERG/daily/extended_SP', proxy=None, lon_min=125., lon_max=240., lat_min=-50., lat_max=25.): 
     
     import os
     import pathlib
@@ -153,7 +153,7 @@ def download_for_dates(dates, opath='/home/nicolasf/operational/ICU/ops/data/GPM
                 
                 pass
 
-def main(dpath='/home/nicolasf/operational/ICU/ops/data/GPM_IMERG/daily/extended_SP', lon_min=125., lon_max=240., lat_min=-55., lat_max=25., proxy=None): 
+def main(dpath='/home/nicolasf/operational/ICU/ops/data/GPM_IMERG/daily/extended_SP', lon_min=125., lon_max=240., lat_min=-50., lat_max=25., proxy=None): 
         
     dates = get_dates_to_download(dpath=dpath)
     
@@ -162,9 +162,7 @@ def main(dpath='/home/nicolasf/operational/ICU/ops/data/GPM_IMERG/daily/extended
 # ------------------------------------------------------------------------------------------------------------------------------------------
 
 if __name__ == '__main__':
-    
-    print("executing script")
-    
+        
     parser = argparse.ArgumentParser()
 
     parser.add_argument('-d','--dpath', dest='dpath', type=str, default=None, help='the path where to find AND save the netcdf files, no default')
